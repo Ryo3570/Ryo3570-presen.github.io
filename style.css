@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    /* background-image: url(/Users/ryow3570/programming/DIG/image/header.jpg); */
+    color: #ffffff;
+    height: 130px;
+    /* 固定 */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    flex: 1;
+    background-color: #000000;
+}
+
+footer {
+    background: rgb(52, 49, 49);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+#about h3 {
+    text-align: center;
+    color: #fff;
+}
+
+#content h3 {
+    text-align: center;
+    background-color: #fff;
+}
+
+#members h3 {
+    text-align: center;
+    background-color: #fff;
+}
+
+.home-text {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vw 1rem;
+    color: #fff;
+    background: url('C:/Users/1492502/OneDrive - トヨタ自動車株式会社/デスクトップ/DIGガレッジ/プログラミング基礎/presentation/presentation/image/IMG_3663.jpg')no-repeat right top / 70vw auto;
+}
+
+
+.home-text1 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vw 1rem;
+    color: #fff;
+    background: url('C:/Users/1492502/OneDrive - トヨタ自動車株式会社/デスクトップ/DIGガレッジ/プログラミング基礎/presentation/presentation/image/IMG_3665.jpg')no-repeat right top / 70vw auto;
+}
+
+.home-text2 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vw 1rem;
+    color: #fff;
+    background: url('C:/Users/1492502/OneDrive - トヨタ自動車株式会社/デスクトップ/DIGガレッジ/プログラミング基礎/presentation/presentation/image/IMG_3666.jpg')no-repeat right top / 70vw auto;
+}
+
+.home-text3 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vw 1rem;
+    color: #fff;
+    background: url('C:/Users/1492502/OneDrive - トヨタ自動車株式会社/デスクトップ/DIGガレッジ/プログラミング基礎/presentation/presentation/image/IMG_3667.jpg')no-repeat right top / 70vw auto;
+}
+
+.home-text4 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vw 1rem;
+    color: #fff;
+    background: url('C:/Users/1492502/OneDrive - トヨタ自動車株式会社/デスクトップ/DIGガレッジ/プログラミング基礎/presentation/presentation/image/IMG_3668.jpg')no-repeat right top / 70vw auto;
+}
+
+.home-hero {
+    background: url('C:/Users/1492502/OneDrive - トヨタ自動車株式会社/デスクトップ/DIGガレッジ/プログラミング基礎/presentation/presentation/image/IMG_3664.jpg')no-repeat right top / 70vw auto;
+    margin-bottom: 0 0;
+}
+
+.home-hero h2 {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.5rem;
+    margin: 8vw 0 12vw;
+    padding: 1rem;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.home-hero h3 {
+    color: #ffffff;
+}
+
+.home-hero p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+@media (min-width:600px) {
+    .home-hero {
+        padding: 16vw 1rem;
+    }
+
+    .home-hero h2 {
+        font-size: 2.5rem;
+        margin: 0 0 2rem;
+        background: none;
+        padding: 0;
+    }
+
+    .home-hero p {
+        width: 38vw;
+    }
+}
+
+@media (min-width:600px) {
+    .content {
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 1rem;
+    }
+}
+
+/* スルスルスクロール */
+html {
+    scroll-behavior: smooth;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* リンク横並び */
+.main-nav {
+    display: flex;
+}
+
+/* 左上ロゴの大きさ指定 */
+.logo {
+    width: 7.5rem;
+}
+
+.main-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 60px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    border-color: #fff;
+}
+
+.main-nav a:hover {
+    color: #000000;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 12px 12px;
+    border-color: transparent transparent #fff transparent;
+}
+
+.main-nav a:hover::after {
+    border-color: transparent transparent #fff transparent;
+}
+
+/*枠デザイン*/
+.profile_box {
+    margin: 2em 0;
+    background: #fff;
+    float: left;
+}
+
+.profile_box .box-title {
+    font-size: 18px;
+    line-height: 1.8;
+    background: rgba(91, 88, 88, 0.11);
+    /*タイトルの背景色*/
+    padding: 4px;
+    text-align: center;
+    color: #000;
+    /*文字色*/
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+/*内容*/
+.profile_center {
+    text-align: center;
+    margin: 10px 15px 0 0;
+}
+
+/*プロフィール画像*/
+.profile_figure {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /*丸くする*/
+    border: solid 3px #000000;
+    /*枠線*/
+}
+
+/*名前*/
+.profile_name {
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*リスト*/
+.profile_box ul {
+    padding: 0.5em 1em 0.5em 2.3em;
+    position: relative;
+}
+
+.profile_box ul li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+    list-style-type: none !important;
+}
+
+.profile_box ul li:before {
+    font-family: "Font Awesome 5 Free";
+    /*アイコンの種類*/
+    font-weight: 900;
+    position: absolute;
+    left: 1em;
+    color: #fff;
+}
+
+/* カウント */
